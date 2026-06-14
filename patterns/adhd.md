@@ -2,34 +2,35 @@
 
 ## Purpose
 
-Catalog of recurring ADHD-shaped patterns: attention, initiation, transition, time perception, hyperfocus, follow-through, and the emotional consequences of any of those failing. The goal is to make the patterns observable enough to design around — not to label every distraction as "ADHD."
+Catalog of recurring ADHD-shaped patterns: attention, initiation, transition, time perception, hyperfocus, follow-through, and the emotional consequences of those failing. Patterns are **analytical artifacts** supporting `psychological-map.md`. The goal is to make the patterns observable enough to design around — not to label every distraction as "ADHD."
 
 ## Update rules
 
 - A pattern is added only after **at least 3 distinct observations on different days**.
+- Every entry has the five required fields: **description, evidence, counter-evidence, confidence, experiments.**
 - Each entry distinguishes:
-  - The **mechanism** (e.g., initiation failure, transition cost, hyperfocus crash, working-memory drop).
-  - The **context** in which it appears (time of day, type of task, environment, presence of others).
-  - The **downstream effect** (missed thing, mood drop, self-criticism loop).
-- Note **what does and does not work** to interrupt the pattern, with sources.
+  - **mechanism** (initiation failure, transition cost, hyperfocus crash, working-memory drop, time blindness)
+  - **context** (time of day, type of task, environment, presence of others)
+  - **downstream effect** (missed thing, mood drop, self-criticism loop)
+- Note what does and does not work to interrupt the pattern, with sources.
 - Self-criticism that follows an ADHD episode is a related but distinct pattern — link it; do not merge it.
 - Stimulant medication, sleep, and exercise are major moderators. Note when an entry depends on those conditions.
+- Patterns may *propose* updates to `psychological-map.md` (ADHD Model) but never replace it.
 
 ## Entry template
 
 ```markdown
 ### <Pattern name>
 
-- **Mechanism:** <initiation / transition / sustained attention / hyperfocus / working memory / time blindness / other>
-- **Context:** <when, where, what kind of task, with whom>
-- **What it looks like:** <concrete behavior>
-- **Downstream effect:** <what gets missed, what mood follows>
-- **Moderators:** <sleep, stimulants, body state, environment>
-- **What has interrupted it (with evidence):** <strategies tried, link to experiments>
-- **What has not worked (with evidence):** <tried and failed — equally important>
+- **Description:** <plain-language description: mechanism + context + downstream effect>
 - **Evidence:** `sessions/...`, `journal/...`
 - **Counter-evidence:** <contexts where it would have been expected but did not occur>
 - **Confidence:** low / medium / high
+- **Experiments:** `experiments/...` (or "proposed: <one-line idea>")
+- **Moderators:** <sleep, stimulants, body state, environment>
+- **What has interrupted it:** <strategies that worked, with sources>
+- **What has not worked:** <tried and failed, with sources>
+- **Map status:** not promoted / proposed for map / present in map (`section`)
 - **Last reviewed:** YYYY-MM-DD
 ```
 
@@ -38,16 +39,15 @@ Catalog of recurring ADHD-shaped patterns: attention, initiation, transition, ti
 ```markdown
 ### Unstructured-weekend collapse
 
-- **Mechanism:** Lack of external scaffolding → no initiation cue → drift → time loss → mood crash by Sunday evening.
-- **Context:** Saturdays/Sundays with no plans, no commitments, no one else's schedule to anchor to.
-- **What it looks like:** Wake up late, browse phone in bed, half-start three things, finish none, feel low by 4pm.
-- **Downstream effect:** Self-criticism loop Sunday evening, anxiety spike about Monday.
-- **Moderators:** Worse without exercise that morning. Better when partner is around.
-- **What has interrupted it:** Pre-scheduled outdoor activity before 11am — `experiments/2026-05-10-saturday-anchor.md`.
-- **What has not worked:** "I'll just decide what to do when I wake up" — repeatedly fails.
+- **Description:** On Saturdays/Sundays with no plans, no commitments, and no external schedule to anchor to, initiation fails. Wake late, browse phone, half-start three things, finish none, mood crash by Sunday evening. Downstream: self-criticism loop, anxiety spike about Monday.
 - **Evidence:** `sessions/2026-04-27-saturday-flat.md`, `sessions/2026-05-02-saturday-flat.md`, `sessions/2026-05-09-saturday-flat.md`
-- **Counter-evidence:** Did not collapse on 2026-04-13 — had a single early plan with a friend.
+- **Counter-evidence:** Did not collapse on 2026-04-13 — had a single early plan with a friend. Suggests external anchor is the active variable.
 - **Confidence:** medium
+- **Experiments:** `experiments/2026-05-10-saturday-anchor.md`
+- **Moderators:** Worse without exercise that morning. Better when partner is around.
+- **What has interrupted it:** Pre-scheduled outdoor activity before 11am.
+- **What has not worked:** "I'll just decide what to do when I wake up."
+- **Map status:** proposed for map (ADHD Model → Motivation and initiation)
 - **Last reviewed:** 2026-06-09
 ```
 

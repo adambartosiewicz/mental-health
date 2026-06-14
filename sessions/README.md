@@ -4,7 +4,9 @@
 
 Structured summaries of substantive AI conversations. Each session captures the context, what was observed, what was interpreted (as hypothesis), and what remains open.
 
-Sessions are the **primary evidence base** for everything in `patterns/` and `core/`. When an entry in those files cites a source, it almost always cites a session file.
+Sessions are the **primary evidence base** for everything in `patterns/` and `psychological-map.md`. When an entry in those files cites a source, it almost always cites a session file.
+
+**Sessions are temporary working documents.** Important discoveries should eventually migrate into `psychological-map.md` via the promotion path (`patterns/` → map). The session files remain as evidence after migration.
 
 ## Update rules
 

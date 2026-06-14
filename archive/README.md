@@ -12,7 +12,7 @@ This matters because:
 
 ## Update rules
 
-- **Move, don't delete.** When superseding an entry in `core/` or `patterns/`, move the old version here. Filename: `<original-name>-YYYY-MM-DD.md`.
+- **Move, don't delete.** When superseding an entry in `psychological-map.md` or `patterns/`, move the old version here. Filename: `<original-name>-YYYY-MM-DD.md`. For map supersessions: `psychological-map-YYYY-MM-DD.md`.
 - **Every archived file gets a header** explaining: when it was archived, what file it came from, why it was retired, and where its replacement lives (if any).
 - **Do not edit archived files** after archiving. They are a snapshot.
 - **Do not promote from archive.** If an old belief turns out to be right again, write a new entry in the live file that cites the archive — don't move the archived file back.

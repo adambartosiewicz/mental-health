@@ -4,7 +4,9 @@
 
 Raw, unstructured, dated thoughts. The place where things go *first*, before they have a shape.
 
-This is the lowest-friction surface in the repo. It exists so that observations are captured at all — the polishing happens later, in `sessions/`, `patterns/`, or `core/`.
+This is the lowest-friction surface in the repo. It exists so that observations are captured at all — the polishing happens later, in `sessions/`, `patterns/`, or `psychological-map.md`.
+
+Journal entries are **evidence**, not facts and not conclusions. They are raw observations that feed everything downstream.
 
 ## Update rules
 
@@ -12,7 +14,7 @@ This is the lowest-friction surface in the repo. It exists so that observations 
 - **Date every entry.** One file per day is fine: `YYYY-MM-DD.md`. Multiple entries within a file get their own timestamp heading.
 - **No template required.** Bullet points, paragraphs, fragments are all fine.
 - **No interpretation pressure.** This is the place to write "I felt off today and I don't know why" without owing a reason.
-- **No promotion from here.** Journal entries get promoted to `patterns/` or `core/` only by `analyze-pattern` or `update-map` — not casually.
+- **No promotion from here.** Journal entries get promoted to `patterns/` or `psychological-map.md` only by `analyze-pattern` or `update-map` — not casually.
 
 ## Suggested filename
 
