@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# JetBrains — user-local workspace state
+.idea/workspace.xml
+.idea/shelf/
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/dictionaries/
+.idea/httpRequests/
+
+# Editor backups
+*~
+*.swp
+*.swo
