@@ -1,1 +1,14 @@
-{}
+{
+  "promptDelete": false,
+  "userIgnoreFilters": [
+    "scripts/",
+    "^scripts/",
+    "docs/",
+    "/[aA][tT][tT][aA][cC][hH][mM][eE][nN][tT][sS]/",
+    "/[dD][oO][cC][sS]/",
+    "/[sS][cC][rR][iI][pP][tT][sS]/"
+  ],
+  "readableLineLength": false,
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": false
+}

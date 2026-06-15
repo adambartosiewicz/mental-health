@@ -1,1 +1,8 @@
-{}
+{
+  "showRibbon": true,
+  "theme": "obsidian",
+  "cssTheme": "Darcula Forest",
+  "accentColor": "",
+  "enabledCssSnippets": [],
+  "nativeMenus": true
+}
