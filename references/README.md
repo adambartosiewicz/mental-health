@@ -1,50 +1,50 @@
-# References
+# Materiały zewnętrzne (references/)
 
-## Purpose
+## Cel
 
-External material that informs the work: articles, ADHD resources, therapy concepts, useful frameworks. Things written by other people that I want to come back to.
+Materiał zewnętrzny, który zasila pracę: artykuły, materiały o ADHD, pojęcia z terapii, użyteczne frameworki. Rzeczy napisane przez innych ludzi, do których chcę wracać.
 
-This directory is an **input**, not part of the model. Concepts here may shape how I read my own evidence, but they do not become entries in `psychological-map.md` automatically.
+Ten katalog jest **wejściem**, nie częścią modelu. Pojęcia stąd mogą kształtować to, jak czytam własne dowody, ale nie stają się automatycznie wpisami w `psychological-map.md`.
 
-## Update rules
+## Reguły aktualizacji
 
-- **References never auto-merge into `psychological-map.md`.** If a concept here turns out to genuinely describe a pattern I have, the path is the same as any other pattern: observed in `journal/` or `sessions/`, recurs, lands in `patterns/`, then — if the evidence supports it — reaches the map. The reference can be cited as the framing, but the evidence must still be mine.
-- One topic per file. Use a descriptive kebab-case filename: `adhd-task-initiation.md`, `act-defusion.md`, `rfs-rejection-sensitive-dysphoria.md`.
-- Always capture the **source** (author, title, link, date accessed). A reference without a source is a paraphrase floating loose.
-- **Summarize, then react.** Keep the summary of the external idea separate from my own reaction or applicability notes.
-- **Mark applicability honestly.** If a framework sounds compelling but I have no evidence it applies to me, say so.
+- **Materiały nigdy nie wlewają się automatycznie do `psychological-map.md`.** Jeśli pojęcie tutaj okaże się rzeczywiście opisywać wzorzec, który mam — ścieżka jest taka sama jak dla każdego innego wzorca: zaobserwowane w `journal/` lub `sessions/`, powtarza się, ląduje w `patterns/`, a potem — jeśli dowody to potwierdzają — dociera do mapy. Materiał można cytować jako framing, ale dowody muszą być moje.
+- Jeden temat na plik. Używaj opisowej nazwy w kebab-case: `adhd-rozpoczynanie-zadan.md`, `act-defuzja.md`, `rsd-wrazliwosc-na-odrzucenie.md`.
+- Zawsze zapisz **źródło** (autor, tytuł, link, data dostępu). Materiał bez źródła to luźno krążąca parafraza.
+- **Najpierw streść, potem zareaguj.** Trzymaj streszczenie zewnętrznej idei oddzielnie od własnej reakcji czy notatek o zastosowaniu.
+- **Oznaczaj uczciwie zastosowanie.** Jeśli framework brzmi przekonująco, ale nie masz dowodów, że dotyczy ciebie, powiedz to.
 
-## Entry template
+## Szablon wpisu
 
 ```markdown
-# <Title of the concept or resource>
+# <Tytuł pojęcia lub materiału>
 
-## Source
-- **Author / origin:**
-- **Title:**
+## Źródło
+- **Autor / pochodzenie:**
+- **Tytuł:**
 - **Link:**
-- **Accessed:** YYYY-MM-DD
+- **Data dostępu:** RRRR-MM-DD
 
-## Summary
-<Short summary of the idea — in plain language, in my own words.>
+## Streszczenie
+<Krótkie streszczenie idei — prostym językiem, własnymi słowami.>
 
-## Key terms
+## Kluczowe pojęcia
 - ...
 
-## My reaction
-<What this surfaced when I read it. Distinguished from the summary.>
+## Moja reakcja
+<Co to wywołało, gdy przeczytałem. Oddzielone od streszczenia.>
 
-## Possible applicability
-<Where in *my* evidence this might or might not fit. If I have no evidence, say "no evidence yet — flagged for observation, not promotion.">
+## Możliwe zastosowanie
+<Gdzie w *moich* dowodach to mogłoby (lub nie) pasować. Jeśli nie mam dowodów, napisz: „brak dowodów — oznaczone do obserwacji, nie do promocji.">
 
-## Related
-- Sessions: ...
-- Patterns: ...
-- Map sections: ...
+## Powiązane
+- Sesje: ...
+- Wzorce: ...
+- Sekcje mapy: ...
 ```
 
-## What this directory is NOT
+## Czego ten katalog NIE jest
 
-- Not a place for me-about-me notes — those go in `journal/`, `sessions/`, `patterns/`, or the map.
-- Not a reading list. A reading list is aspiration; this directory is for material already engaged with.
-- Not a shortcut into the map. A compelling framework is not evidence.
+- Nie jest miejscem na moje notatki o mnie — te idą do `journal/`, `sessions/`, `patterns/` albo mapy.
+- Nie jest listą lektur. Lista lektur to aspiracja; ten katalog jest dla materiału już przeczytanego i przepracowanego.
+- Nie jest skrótem do mapy. Atrakcyjny framework to nie dowód.

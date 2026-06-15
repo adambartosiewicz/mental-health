@@ -1,5 +1,7 @@
 # Command: new-experiment
 
+> **Output language:** Polish. The experiment file must be in Polish, using the template below.
+
 ## Purpose
 
 Design a behavioral experiment to test a specific hypothesis about the user's psychology. Experiments turn vague self-narratives into falsifiable, time-boxed tests.
@@ -12,45 +14,45 @@ The system prefers experiments over speculation. When an interpretation in `psyc
 - The user wants to *change* a behavior, not just understand it.
 - An interpretation in the map has become load-bearing and needs to be checked against reality.
 
-Do not run an experiment for things that are not testable in everyday life (e.g. "am I a good person").
+Do not run an experiment for things that are not testable in everyday life (e.g. "czy jestem dobrym człowiekiem").
 
 ## File to create
 
 ```
-experiments/YYYY-MM-DD-<short-kebab-name>.md
+experiments/RRRR-MM-DD-<krótka-kebab-nazwa>.md
 ```
 
-Status starts at `active`. Update status when reviewed: `complete`, `paused`, `abandoned`.
+Status starts at `aktywny`. Update status when reviewed: `zamknięty`, `wstrzymany`, `porzucony`.
 
-## Template
+## Polish template
 
 ```markdown
-# Experiment: <Name>
+# Eksperyment: <Nazwa>
 
-**Status:** active
-**Started:** YYYY-MM-DD
-**Review date:** YYYY-MM-DD
+**Status:** aktywny
+**Rozpoczęty:** RRRR-MM-DD
+**Data przeglądu:** RRRR-MM-DD
 
-## Hypothesis
-<A single, concrete, falsifiable statement. "If I do X in situation Y, then Z will happen." Not "I want to feel better." Not "I want to be more social.">
+## Hipoteza
+<Pojedyncze, konkretne, falsyfikowalne stwierdzenie. „Jeśli zrobię X w sytuacji Y, to Z się stanie." Nie „chcę się czuć lepiej." Nie „chcę być bardziej towarzyski.">
 
-## Why It Matters
-<What pattern, open question, or map entry this connects to. Link to specific files in `patterns/`, `sessions/`, or sections of `psychological-map.md`. If you cannot link anything, the experiment is probably premature.>
+## Dlaczego to ważne
+<Z którym wzorcem, otwartym pytaniem lub wpisem mapy się to łączy. Linkuj do konkretnych plików w `patterns/`, `sessions/` lub sekcji `psychological-map.md`. Jeśli nie możesz nic podlinkować, eksperyment jest prawdopodobnie przedwczesny.>
 
-## Procedure
-<Exactly what will be done, when, and how often. Concrete enough that a stranger could execute it. Include the trigger ("when X happens"), the action ("I will do Y"), and the duration ("for two weeks").>
+## Procedura
+<Dokładnie co będzie zrobione, kiedy i jak często. Wystarczająco konkretnie, żeby obca osoba mogła wykonać. Włącz wyzwalacz („gdy X się zdarza"), działanie („zrobię Y") i czas trwania („przez dwa tygodnie").>
 
-## Success Criteria
-<What observable result would count as the hypothesis being supported? Be specific. Prefer behavioral evidence over feelings. If feelings are the measure, define how they'll be rated.>
+## Kryteria sukcesu
+<Jaki obserwowalny wynik liczyłby się jako potwierdzenie hipotezy? Konkretnie. Preferuj dowody behawioralne nad uczucia. Jeśli uczucia są miarą, zdefiniuj, jak będą oceniane.>
 
-## Failure Criteria
-<What observable result would count as the hypothesis being disconfirmed — or as the experiment itself being too costly to continue? Define this BEFORE starting.>
+## Kryteria porażki
+<Jaki obserwowalny wynik liczyłby się jako obalenie hipotezy — albo jako sygnał, że eksperyment jest zbyt kosztowny, by kontynuować? Zdefiniuj to PRZED startem.>
 
-## Review Date
-<Date on which the experiment will be evaluated using `close-experiment`. Default: 2–4 weeks from start unless the protocol implies otherwise.>
+## Data przeglądu
+<Data, w której eksperyment zostanie oceniony komendą `close-experiment`. Domyślnie: 2–4 tygodnie od startu, chyba że protokół sugeruje inaczej.>
 
-## Notes during run
-<Append-only log of observations made while the experiment is running. Dated entries. No interpretation here — that goes into the close-out review.>
+## Notatki w trakcie
+<Tylko-dopisuj log obserwacji robionych w trakcie eksperymentu. Datowane wpisy. Bez interpretacji — ta idzie do przeglądu zamykającego.>
 ```
 
 ## Rules
@@ -60,5 +62,5 @@ Status starts at `active`. Update status when reviewed: `complete`, `paused`, `a
 - **Time-box.** Open-ended experiments produce no learning.
 - **Low cost preferred.** The smallest experiment that could move the question is the right experiment.
 - **Cite the source.** The experiment file must link to the pattern, session, or map section that motivated it.
-- **Log it.** Add an entry to `.ai/session-log.md` with `→ experiment:<name>`.
-- **Prefer "engage more" experiments to "feel less" experiments.** The goal is a larger life, not lower anxiety.
+- **Log it.** Add an entry to `.ai/session-log.md` with `→ eksperyment:<nazwa>` (in Polish).
+- **Prefer "zaangażuj się bardziej" experiments to "czuj mniej" experiments.** The goal is a larger life, not lower anxiety.

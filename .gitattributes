@@ -1,0 +1,35 @@
+# git-crypt encrypted paths
+#
+# Files matching these patterns are encrypted at rest in git history.
+# In the working tree (and Obsidian) they appear as plaintext — git-crypt
+# applies clean/smudge filters transparently.
+#
+# To check status:  git-crypt status
+# To lock manually: git-crypt lock
+# To unlock:        git-crypt unlock
+
+# The mapa — the single source of truth — is always encrypted
+psychological-map.md filter=git-crypt diff=git-crypt
+
+# Personal directories: encrypt all .md files but keep READMEs plaintext
+# (READMEs document the directory's purpose and contain no personal data)
+journal/** filter=git-crypt diff=git-crypt
+journal/README.md !filter !diff
+
+sessions/** filter=git-crypt diff=git-crypt
+sessions/README.md !filter !diff
+
+experiments/** filter=git-crypt diff=git-crypt
+experiments/README.md !filter !diff
+
+archive/** filter=git-crypt diff=git-crypt
+archive/README.md !filter !diff
+
+references/** filter=git-crypt diff=git-crypt
+references/README.md !filter !diff
+
+# Patterns: encrypt all (entries will contain personal observations)
+patterns/** filter=git-crypt diff=git-crypt
+
+# Session log lists session titles + tags — encrypt
+.ai/session-log.md filter=git-crypt diff=git-crypt

@@ -1,34 +1,34 @@
-# Sessions
+# Sesje (sessions/)
 
-## Purpose
+## Cel
 
-Structured summaries of substantive AI conversations. Each session captures the context, what was observed, what was interpreted (as hypothesis), and what remains open.
+Ustrukturyzowane podsumowania znaczących rozmów z AI. Każda sesja łapie kontekst, co zostało zaobserwowane, co zinterpretowane (jako hipoteza) i co zostaje otwarte.
 
-Sessions are the **primary evidence base** for everything in `patterns/` and `psychological-map.md`. When an entry in those files cites a source, it almost always cites a session file.
+Sesje są **podstawową bazą dowodów** dla wszystkiego w `patterns/` i `psychological-map.md`. Gdy wpis w tych plikach cytuje źródło, prawie zawsze cytuje plik sesji.
 
-**Sessions are temporary working documents.** Important discoveries should eventually migrate into `psychological-map.md` via the promotion path (`patterns/` → map). The session files remain as evidence after migration.
+**Sesje są tymczasowymi dokumentami roboczymi.** Ważne odkrycia powinny ostatecznie migrować do `psychological-map.md` przez ścieżkę promocji (`patterns/` → mapa). Pliki sesji pozostają jako dowody po migracji.
 
-## Update rules
+## Reguły aktualizacji
 
-- Create session files via the `new-session` command — see `.ai/commands/new-session.md` for the full template.
-- Filename: `YYYY-MM-DD-<short-kebab-topic>.md`. Same-day repeats get `-2`, `-3`, etc.
-- **Separate observation from interpretation** inside the file. This is the single most important rule.
-- Add a one-line entry to `.ai/session-log.md` for every new session.
-- Sessions are not edited after the fact — except to fix typos or add a link to a later session that follows up. If a session's interpretation later turns out wrong, that is recorded in the *new* session, not by rewriting the old one.
+- Pliki sesji twórz komendą `new-session` — pełny szablon w `.ai/commands/new-session.md`.
+- Nazwa pliku: `RRRR-MM-DD-<krótki-kebab-temat>.md`. Powtórki tego samego dnia dostają `-2`, `-3` itd.
+- **Oddzielaj obserwację od interpretacji** w pliku. To najważniejsza reguła tego szablonu.
+- Dodaj jednolinijkowy wpis do `.ai/session-log.md` dla każdej nowej sesji.
+- Sesji nie edytuje się po fakcie — z wyjątkiem literówek i dodania linku do późniejszej sesji, która podejmuje wątek. Jeśli interpretacja z sesji okaże się błędna, jest to zapisywane w *nowej* sesji, nie przez przepisanie starej.
 
-## Template summary
+## Streszczenie szablonu
 
-The full template lives in `.ai/commands/new-session.md`. The required sections are:
+Pełny szablon żyje w `.ai/commands/new-session.md`. Wymagane sekcje:
 
-- Context
-- Observations
-- Insights (marked as hypotheses, with confidence)
-- Open questions
-- Possible map updates
-- Links
+- Kontekst
+- Obserwacje
+- Wglądy (oznaczone jako hipotezy, z poziomem pewności)
+- Otwarte pytania
+- Możliwe aktualizacje mapy
+- Linki
 
-## What this directory is NOT
+## Czego ten katalog NIE jest
 
-- Not a journal — journals go in `journal/`.
-- Not a to-do list.
-- Not a place for experiment results — those go in the experiment file under `experiments/`.
+- Nie jest dziennikiem — dzienniki idą do `journal/`.
+- Nie jest listą zadań.
+- Nie jest miejscem na wyniki eksperymentów — te idą do pliku eksperymentu w `experiments/`.

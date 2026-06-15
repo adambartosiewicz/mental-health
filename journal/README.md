@@ -1,41 +1,41 @@
-# Journal
+# Dziennik (journal/)
 
-## Purpose
+## Cel
 
-Raw, unstructured, dated thoughts. The place where things go *first*, before they have a shape.
+Surowe, nieustrukturyzowane, datowane myśli. Miejsce, do którego rzeczy trafiają *najpierw*, zanim mają kształt.
 
-This is the lowest-friction surface in the repo. It exists so that observations are captured at all — the polishing happens later, in `sessions/`, `patterns/`, or `psychological-map.md`.
+To miejsce o najmniejszym tarciu w repo. Istnieje po to, żeby obserwacje w ogóle były złapane — polerowanie odbywa się później, w `sessions/`, `patterns/` lub `psychological-map.md`.
 
-Journal entries are **evidence**, not facts and not conclusions. They are raw observations that feed everything downstream.
+Wpisy w dzienniku są **dowodami**, nie faktami i nie wnioskami. Są surowymi obserwacjami, które zasilają wszystko, co dalej.
 
-## Update rules
+## Reguły aktualizacji
 
-- **Append-only.** Never edit a past entry. If a later thought reverses an earlier one, write a new entry that says so.
-- **Date every entry.** One file per day is fine: `YYYY-MM-DD.md`. Multiple entries within a file get their own timestamp heading.
-- **No template required.** Bullet points, paragraphs, fragments are all fine.
-- **No interpretation pressure.** This is the place to write "I felt off today and I don't know why" without owing a reason.
-- **No promotion from here.** Journal entries get promoted to `patterns/` or `psychological-map.md` only by `analyze-pattern` or `update-map` — not casually.
+- **Tylko dopisuj.** Nigdy nie edytuj przeszłego wpisu. Jeśli późniejsza myśl odwraca wcześniejszą, napisz nowy wpis, który to mówi.
+- **Datuj każdy wpis.** Jeden plik na dzień jest OK: `RRRR-MM-DD.md`. Wiele wpisów w jednym pliku dostaje własne nagłówki czasowe.
+- **Bez wymogu szablonu.** Punkty, akapity, fragmenty — wszystko OK.
+- **Bez presji interpretacji.** To miejsce, w którym można napisać „czułem się dziś nie tak i nie wiem dlaczego", bez obowiązku podania powodu.
+- **Bez promocji stąd.** Wpisy z dziennika trafiają do `patterns/` lub `psychological-map.md` tylko przez `analyze-pattern` lub `update-map` — nigdy mimochodem.
 
-## Suggested filename
+## Sugerowana nazwa pliku
 
 ```
-journal/YYYY-MM-DD.md
+journal/RRRR-MM-DD.md
 ```
 
-If multiple entries on the same day:
+Jeśli wiele wpisów w tym samym dniu:
 
 ```markdown
 ## HH:MM
 
-<entry>
+<wpis>
 
 ## HH:MM
 
-<another entry>
+<inny wpis>
 ```
 
-## What this directory is NOT
+## Czego ten katalog NIE jest
 
-- Not a place for structured session summaries — those go in `sessions/`.
-- Not a place for experiment logs — those go in the experiment file under `experiments/`.
-- Not a to-do list.
+- Nie jest miejscem na ustrukturyzowane podsumowania sesji — te idą do `sessions/`.
+- Nie jest miejscem na logi eksperymentów — te idą do pliku eksperymentu w `experiments/`.
+- Nie jest listą zadań.

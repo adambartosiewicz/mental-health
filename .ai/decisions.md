@@ -1,57 +1,63 @@
-# System Decisions
+# Decyzje systemowe
 
-Durable decisions about **how this repository works** — not about the user. When a workflow rule, naming convention, or structural choice gets settled, record it here so future sessions don't relitigate.
+Trwałe decyzje o tym, **jak działa to repozytorium** — nie o użytkowniku. Gdy reguła workflow, konwencja nazewnictwa czy wybór strukturalny zostanie ustalony, zapisuj tu, żeby przyszłe sesje nie litygowały tego od nowa.
 
-## Update rules
+## Reguły aktualizacji
 
-- Append new decisions to the bottom with a date.
-- Never edit a decision in place. If a decision is reversed, add a new entry that supersedes it, and link back.
-- Keep entries short: the rule, the reason, and (if reversed) what replaced it.
+- Nowe decyzje dopisuj na dole z datą.
+- Nigdy nie edytuj decyzji w miejscu. Jeśli decyzja zostanie odwrócona, dodaj nowy wpis, który ją zastępuje, i podlinkuj wstecz.
+- Zapisy krótkie: reguła, powód, i (jeśli odwrócona) co zastąpiło.
 
 ## Format
 
 ```
-## YYYY-MM-DD — <short title>
+## RRRR-MM-DD — <krótki tytuł>
 
-**Decision:** <what we decided>
-**Why:** <the reason — usually a problem this avoided>
-**Status:** active | superseded by <date>
+**Decyzja:** <co ustalono>
+**Dlaczego:** <powód — zwykle problem, którego uniknęliśmy>
+**Status:** aktywna | zastąpiona przez <data>
 ```
 
 ---
 
-## 2026-06-14 — Sessions use date-topic filenames
+## 2026-06-14 — Sesje używają nazw data-temat
 
-**Decision:** Session files are named `YYYY-MM-DD-short-topic.md` (kebab-case topic). One session per file.
-**Why:** Sortable chronologically, greppable by topic, no collisions.
-**Status:** active
+**Decyzja:** Pliki sesji nazywane są `RRRR-MM-DD-krótki-temat.md` (kebab-case temat). Jedna sesja na plik.
+**Dlaczego:** Sortują się chronologicznie, łatwo grepować po temacie, brak kolizji.
+**Status:** aktywna
 
-## 2026-06-14 — Map updates require ≥3 observations
+## 2026-06-14 — Aktualizacje mapy wymagają ≥3 obserwacji
 
-**Decision:** Nothing is added to `psychological-map.md` from fewer than three distinct observations on different days.
-**Why:** Single-event conclusions are how this kind of system becomes a hall of mirrors.
-**Status:** active
+**Decyzja:** Nic nie trafia do `psychological-map.md` przy mniej niż trzech odrębnych obserwacjach z różnych dni.
+**Dlaczego:** Wnioski z pojedynczych zdarzeń to droga do tego, żeby ten system stał się salą luster.
+**Status:** aktywna
 
-## 2026-06-14 — Archive instead of delete
+## 2026-06-14 — Archiwizuj zamiast usuwać
 
-**Decision:** Outdated content from `psychological-map.md` is moved to `archive/psychological-map-YYYY-MM-DD.md`, not deleted. The replacement entry links to the archive.
-**Why:** Trend detection needs history. We need to be able to ask "what did I used to believe about X?"
-**Status:** active
+**Decyzja:** Zdezaktualizowana treść z `psychological-map.md` przenoszona jest do `archive/psychological-map-RRRR-MM-DD.md`, nie usuwana. Zastępczy wpis linkuje do archiwum.
+**Dlaczego:** Wykrywanie trendów wymaga historii. Trzeba móc zapytać „co kiedyś myślałem o X?"
+**Status:** aktywna
 
-## 2026-06-14 — Single source of truth at the root
+## 2026-06-14 — Pojedyncze źródło prawdy w katalogu głównym
 
-**Decision:** `psychological-map.md` lives at the repository root and is the only authoritative document about the user. The `core/` directory was removed; its contents (values, strengths, open-questions) were merged into the map as sections.
-**Why:** The repository was fragmenting the model across multiple "core" files, undermining the single-source-of-truth principle. The map should be readable on its own.
-**Status:** active
+**Decyzja:** `psychological-map.md` żyje w katalogu głównym repozytorium i jest jedynym autorytatywnym dokumentem o użytkowniku. Katalog `core/` został usunięty; jego zawartość (values, strengths, open-questions) została scalona do mapy jako sekcje.
+**Dlaczego:** Repozytorium fragmentowało model na wielu „core" plikach, podkopując zasadę pojedynczego źródła prawdy. Mapa powinna być czytelna sama z siebie.
+**Status:** aktywna
 
-## 2026-06-14 — `references/` never auto-merges
+## 2026-06-14 — `references/` nigdy nie wlewa się automatycznie
 
-**Decision:** External material in `references/` (articles, ADHD resources, therapy concepts, frameworks) is an input, not part of the model. Reference material does not flow into `psychological-map.md` automatically — the same evidence threshold applies as for any user-specific pattern.
-**Why:** A compelling framework is not evidence. Without this rule the map would fill with other people's models.
-**Status:** active
+**Decyzja:** Materiał zewnętrzny w `references/` (artykuły, materiały o ADHD, pojęcia z terapii, frameworki) jest wejściem, nie częścią modelu. Materiał referencyjny nie wpływa do `psychological-map.md` automatycznie — obowiązuje ten sam próg dowodów co dla każdego specyficznego dla użytkownika wzorca.
+**Dlaczego:** Atrakcyjny framework to nie dowód. Bez tej reguły mapa wypełniłaby się cudzymi modelami.
+**Status:** aktywna
 
-## 2026-06-14 — Success is not "less anxiety"
+## 2026-06-14 — Sukces to nie „mniej lęku"
 
-**Decision:** The success metric of this repository is: larger life, reduced avoidance, increased psychological flexibility, increased engagement, improved self-understanding. Reduction of anxiety is **not** the success metric.
-**Why:** Anxiety can drop because life got smaller. That is a failure presenting as success. Encoded so the AI does not optimize for the wrong objective.
-**Status:** active
+**Decyzja:** Metryką sukcesu tego repozytorium jest: większe życie, mniej unikania, większa elastyczność psychologiczna, większe zaangażowanie, lepsze rozumienie siebie. Redukcja lęku **nie** jest metryką sukcesu.
+**Dlaczego:** Lęk może spaść, bo życie się skurczyło. To porażka udająca sukces. Zapisane, żeby AI nie optymalizował dla złego celu.
+**Status:** aktywna
+
+## 2026-06-15 — Język repozytorium: polski
+
+**Decyzja:** Domyślnym językiem zawartości plików (mapa, wzorce, sesje, journal, eksperymenty, materiały, README, decyzje) jest polski. Komendy w `.ai/commands/` zostają w angielskim, ale ich wyniki — pliki sesji, eksperymenty, propozycje aktualizacji mapy, raporty cotygodniowe — generowane są po polsku. Nazwy plików i katalogów (np. `psychological-map.md`, `patterns/`, `journal/`) zostają w angielskim ze względów technicznych.
+**Dlaczego:** Użytkownik myśli i czuje po polsku. Self-modeling po angielsku tworzy warstwę tłumaczenia, która gubi niuanse. Komendy zostają po angielsku, bo to instrukcje techniczne dla AI, nie treść dla użytkownika.
+**Status:** aktywna

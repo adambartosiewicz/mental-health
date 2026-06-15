@@ -1,38 +1,38 @@
-# Archive
+# Archiwum (archive/)
 
-## Purpose
+## Cel
 
-Where retired material goes. **Nothing is deleted from this repository** — beliefs, patterns, and map entries that no longer hold are moved here with the date they were retired.
+Tu trafia wycofany materiał. **Nic nie jest usuwane z tego repozytorium** — przekonania, wzorce i wpisy mapy, które już się nie utrzymują, są przenoszone tutaj z datą wycofania.
 
-This matters because:
+To ma znaczenie, bo:
 
-1. **Trend detection requires history.** "What did I used to believe about myself?" is a real question, and the answer needs to be retrievable.
-2. **Wrong beliefs are still data.** A retired pattern tells me something about how I was reading my own evidence at the time.
-3. **Archiving prevents quiet revisionism.** Without an archive, an outdated map entry would just be silently rewritten, and the history of how my model evolved would be lost.
+1. **Wykrywanie trendów wymaga historii.** „Co kiedyś myślałem o sobie?" to realne pytanie i odpowiedź musi być do odzyskania.
+2. **Błędne przekonania też są danymi.** Wycofany wzorzec mówi coś o tym, jak czytałem własne dowody w danym czasie.
+3. **Archiwizacja zapobiega cichemu rewizjonizmowi.** Bez archiwum zdezaktualizowany wpis mapy byłby cicho przepisywany, a historia ewolucji mojego modelu by się gubiła.
 
-## Update rules
+## Reguły aktualizacji
 
-- **Move, don't delete.** When superseding an entry in `psychological-map.md` or `patterns/`, move the old version here. Filename: `<original-name>-YYYY-MM-DD.md`. For map supersessions: `psychological-map-YYYY-MM-DD.md`.
-- **Every archived file gets a header** explaining: when it was archived, what file it came from, why it was retired, and where its replacement lives (if any).
-- **Do not edit archived files** after archiving. They are a snapshot.
-- **Do not promote from archive.** If an old belief turns out to be right again, write a new entry in the live file that cites the archive — don't move the archived file back.
+- **Przenoś, nie kasuj.** Gdy zastępujesz wpis w `psychological-map.md` lub `patterns/`, przenieś starą wersję tutaj. Nazwa pliku: `<oryginalna-nazwa>-RRRR-MM-DD.md`. Dla zastąpień mapy: `psychological-map-RRRR-MM-DD.md`.
+- **Każdy zarchiwizowany plik dostaje nagłówek** wyjaśniający: kiedy został zarchiwizowany, z którego pliku pochodzi, dlaczego został wycofany i gdzie żyje zastępca (jeśli jest).
+- **Nie edytuj zarchiwizowanych plików** po zarchiwizowaniu. To są zrzuty stanu.
+- **Nie promuj z archiwum.** Jeśli stare przekonanie znów okaże się prawdziwe, napisz nowy wpis w żywym pliku, który cytuje archiwum — nie przenoś zarchiwizowanego pliku z powrotem.
 
-## Header template for archived files
+## Szablon nagłówka dla zarchiwizowanych plików
 
 ```markdown
-# Archived: <original title>
+# Zarchiwizowane: <oryginalny tytuł>
 
-- **Archived on:** YYYY-MM-DD
-- **Came from:** `<path/to/original/file>` (section if relevant)
-- **Reason retired:** <why this no longer holds — be specific>
-- **Replacement (if any):** `<path/to/new/file>` — <one-line gist>
+- **Zarchiwizowane:** RRRR-MM-DD
+- **Pochodzi z:** `<ścieżka/do/oryginalnego/pliku>` (sekcja jeśli istotna)
+- **Powód wycofania:** <dlaczego to już się nie utrzymuje — konkretnie>
+- **Zastępca (jeśli jest):** `<ścieżka/do/nowego/pliku>` — <jednolinijkowa esencja>
 
 ---
 
-<original content preserved below, unedited>
+<oryginalna treść zachowana poniżej, bez edycji>
 ```
 
-## What this directory is NOT
+## Czego ten katalog NIE jest
 
-- Not a graveyard for things I want to forget. The point is to keep them readable.
-- Not a backup. The live files are the source of truth for the current model; archive is for history.
+- Nie jest cmentarzem rzeczy, które chcę zapomnieć. Sens jest taki, żeby były czytelne.
+- Nie jest kopią zapasową. Żywe pliki są źródłem prawdy dla aktualnego modelu; archiwum jest dla historii.

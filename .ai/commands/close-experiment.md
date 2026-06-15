@@ -1,5 +1,7 @@
 # Command: close-experiment
 
+> **Output language:** Polish. The close-out section appended to the experiment file must be in Polish.
+
 ## Purpose
 
 Review a completed (or abandoned) experiment. Extract the learning. Feed it back into `patterns/` and, when warranted, propose updates to `psychological-map.md`.
@@ -10,47 +12,47 @@ Review a completed (or abandoned) experiment. Extract the learning. Feed it back
 - The experiment's failure criteria were tripped.
 - The user decided to stop, regardless of the original timeline.
 
-Even an abandoned experiment gets a close-out. "We abandoned this and why" is a real finding.
+Even an abandoned experiment gets a close-out. "Porzuciliśmy to i dlaczego" is a real finding.
 
 ## Procedure
 
 1. Open the experiment file in `experiments/`. Read the original hypothesis, success criteria, failure criteria, and run notes.
 2. Compare the run notes against the pre-registered success/failure criteria. Do not redefine them now.
 3. Decide the result.
-4. Append the close-out section (below) to the experiment file. Update the status field to `complete` (or `abandoned`).
+4. Append the close-out section (below) to the experiment file. Update the status field to `zamknięty` (or `porzucony`).
 5. If the experiment produces a candidate update to `patterns/` or `psychological-map.md`, flag it in the close-out — do not write directly to those files here. Promotion goes through `update-map`.
-6. Log it in `.ai/session-log.md` with `→ experiment:<name> closed`.
+6. Log it in `.ai/session-log.md` with `→ eksperyment:<nazwa> zamknięty`.
 
-## Template (append to the experiment file)
+## Polish template (append to the experiment file)
 
 ```markdown
 ---
 
-## Closed: YYYY-MM-DD
+## Zamknięty: RRRR-MM-DD
 
-## Result
-<Supported / Not supported / Inconclusive / Abandoned. One paragraph stating what actually happened against the pre-registered criteria. No relitigating the criteria. No "well, kind of.">
+## Wynik
+<Potwierdzony / Niepotwierdzony / Nierozstrzygnięty / Porzucony. Jeden akapit mówiący, co się rzeczywiście stało wobec z góry zarejestrowanych kryteriów. Bez litygowania kryteriów. Bez „no, w pewnym sensie tak".>
 
-## What Worked
-<Parts of the protocol that produced real signal or felt sustainable. Be specific.>
+## Co zadziałało
+<Części protokołu, które wytworzyły realny sygnał lub były znośne. Konkretnie.>
 
-## What Didn't
-<Parts of the protocol that broke down, were skipped, or produced no signal. Be specific. Include avoidance: if a step was repeatedly dodged, name it.>
+## Co nie zadziałało
+<Części protokołu, które się posypały, były pomijane lub nie wytworzyły sygnału. Konkretnie. Włącz unikanie: jeśli krok był wielokrotnie omijany, nazwij to.>
 
-## Lessons Learned
-<What is now believed more strongly, less strongly, or differently because of this experiment. Distinguish lessons about *the user* from lessons about *the experiment design*.>
+## Wnioski
+<Co teraz wierzę mocniej, słabiej lub inaczej dzięki temu eksperymentowi. Rozróżnij wnioski o *użytkowniku* od wniosków o *projekcie eksperymentu*.>
 
-## Psychological Map Updates
-<Concrete proposals for `patterns/` or sections of `psychological-map.md`. For each, state: which file/section, what entry to add/change, what evidence supports it. These are proposals — actual edits happen via `update-map`.>
+## Aktualizacje mapy psychologicznej
+<Konkretne propozycje do `patterns/` lub sekcji `psychological-map.md`. Dla każdej napisz: który plik/sekcja, jaki wpis dodać/zmienić, jakie dowody to wspierają. To są propozycje — faktyczne edycje robi `update-map`.>
 
-- Proposal: ...
-- Proposal: ...
+- Propozycja: ...
+- Propozycja: ...
 ```
 
 ## Rules
 
 - **No moving the goalposts.** The success/failure criteria were defined upfront. They are the criteria.
-- **An honest negative result is a finding.** "Hypothesis not supported" is as valuable as confirmation. Do not soften it.
-- **Abandonment counts.** Record why it was abandoned (boredom, drift, life circumstances, fear). The reason is often the most useful artifact of the experiment.
+- **An honest negative result is a finding.** "Hipoteza niepotwierdzona" is as valuable as confirmation. Do not soften it.
+- **Abandonment counts.** Record why it was abandoned (nuda, dryf, okoliczności życiowe, lęk). The reason is often the most useful artifact of the experiment.
 - **Do not promote to `psychological-map.md` from this command.** Stage proposals only.
 - **Check against the success metric.** If the experiment "succeeded" by making life smaller (more avoidance, less engagement), that is not actually success.

@@ -1,5 +1,7 @@
 # Command: weekly-review
 
+> **Output language:** Polish. The session file produced by this command, and all dimension reads, wins, concerns, patterns, and suggested actions, must be in Polish.
+
 ## Purpose
 
 Review the last 7 days. Pull signal out of noise. Set direction for the next week.
@@ -14,55 +16,55 @@ Review the last 7 days. Pull signal out of noise. Set direction for the next wee
 
 ## Analyze across dimensions
 
-For each dimension, give a one-line read (`trend`, `notes`). Cite at least one source file per dimension when relevant. If there is no data, say so — do not fabricate.
+For each dimension, give a one-line read (`trend`, `notatki`). Cite at least one source file per dimension when relevant. If there is no data, say so — do not fabricate.
 
-- **Mood** — overall affective baseline, any spikes/dips.
-- **Anxiety** — frequency, triggers, intensity. Note avoidance behaviors.
-- **ADHD symptoms** — focus, follow-through, time loss, hyperfocus, transitions.
-- **Energy** — physical energy, sleep, motivation distinguished from mood.
-- **Social activity** — interactions had, declined, dreaded, enjoyed.
-- **Experiments** — what ran, what is due, what was learned.
+- **Nastrój** — overall affective baseline, any spikes/dips.
+- **Lęk** — frequency, triggers, intensity. Note avoidance behaviors.
+- **Objawy ADHD** — focus, follow-through, time loss, hyperfocus, transitions.
+- **Energia** — physical energy, sleep, motivation distinguished from mood.
+- **Aktywność społeczna** — interactions had, declined, dreaded, enjoyed.
+- **Eksperymenty** — what ran, what is due, what was learned.
 
 ## Output structure
 
-Write the review as a session file: `sessions/YYYY-MM-DD-weekly-review.md`, tagged `[meta]` in `.ai/session-log.md`.
+Write the review as a session file: `sessions/RRRR-MM-DD-weekly-review.md`, tagged `[meta]` in `.ai/session-log.md`. Everything in Polish.
 
-Sections:
+Sections (Polish):
 
 ```markdown
-# Weekly Review — YYYY-MM-DD
+# Przegląd tygodnia — RRRR-MM-DD
 
-## Window
-<date range covered>
+## Okno
+<zakres dat>
 
-## Dimensions
-- **Mood:** ...
-- **Anxiety:** ...
+## Wymiary
+- **Nastrój:** ...
+- **Lęk:** ...
 - **ADHD:** ...
-- **Energy:** ...
-- **Social:** ...
-- **Experiments:** ...
+- **Energia:** ...
+- **Społeczne:** ...
+- **Eksperymenty:** ...
 
-## Wins
-<things that actually worked — concrete, not generic. Cite evidence.>
+## Sukcesy
+<rzeczy, które rzeczywiście zadziałały — konkretne, nie ogólne. Cytuj dowody.>
 
-## Concerns
-<things trending wrong — name them plainly. No reassurance.>
+## Obawy
+<rzeczy idące źle — nazwij wprost. Bez uspokajania.>
 
-## Patterns
-<anything that shows up across multiple dimensions or repeats from last week's review.>
+## Wzorce
+<cokolwiek, co pojawia się w wielu wymiarach lub powtarza się z poprzedniego tygodnia.>
 
-## Suggested next actions
-<1–3 concrete actions. Each one names what to do, when, and what would count as having done it. Prefer actions that reduce avoidance over actions that add to a to-do list.>
+## Sugerowane następne działania
+<1–3 konkretne działania. Każde nazywa, co zrobić, kiedy i co liczyłoby się jako wykonane. Preferuj działania, które zmniejszają unikanie, nad działania, które dokładają do listy zadań.>
 
-## Map / pattern candidates
-<anything that should be considered for promotion to `patterns/` or `psychological-map.md`. Do not promote here; just flag.>
+## Kandydaci do mapy / wzorców
+<cokolwiek, co warto rozważyć do promocji do `patterns/` lub `psychological-map.md`. Nie promuj tutaj; tylko flaguj.>
 ```
 
 ## Rules
 
 - Be terse. A weekly review that takes 20 minutes to read will not be reread.
-- No generic advice ("try meditating", "get more sleep"). Actions must connect to specific observed material.
+- No generic advice ("spróbuj medytować", "śpij więcej"). Actions must connect to specific observed material.
 - If avoidance shows up, name it explicitly. Do not euphemize.
-- It is fine — sometimes correct — to write "nothing notable this week."
+- It is fine — sometimes correct — to write "w tym tygodniu nic wartego uwagi."
 - Remember the success metric: anxiety going down is not in itself a win. A larger week with more avoidance reduced is a win.

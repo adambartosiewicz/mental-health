@@ -1,40 +1,40 @@
-# Experiments
+# Eksperymenty (experiments/)
 
-## Purpose
+## Cel
 
-Behavioral experiments — small, time-boxed, pre-registered tests of specific hypotheses about how I work. Experiments are how interpretations become knowledge.
+Eksperymenty behawioralne — małe, ograniczone czasowo, z góry zarejestrowane testy konkretnych hipotez o tym, jak funkcjonuję. Eksperymenty są drogą, którą interpretacje zamieniają się w wiedzę.
 
-## Update rules
+## Reguły aktualizacji
 
-- Create experiment files via the `new-experiment` command — see `.ai/commands/new-experiment.md`.
-- Close experiment files via the `close-experiment` command — see `.ai/commands/close-experiment.md`.
-- Filename: `YYYY-MM-DD-<short-kebab-name>.md`. The date is when the experiment **starts**.
-- **Pre-register success and failure criteria.** Both must be written before the experiment begins. Post-hoc redefinition is how this system turns into self-justification.
-- **Time-box.** Every experiment has a review date.
-- **One hypothesis per experiment.** If there are two, run two — or pick.
-- Status field on every file: `active`, `complete`, `paused`, `abandoned`.
-- An abandoned experiment still gets a close-out write-up. *Why it was abandoned* is real data.
+- Pliki eksperymentów twórz komendą `new-experiment` — patrz `.ai/commands/new-experiment.md`.
+- Pliki eksperymentów zamykaj komendą `close-experiment` — patrz `.ai/commands/close-experiment.md`.
+- Nazwa pliku: `RRRR-MM-DD-<krótka-kebab-nazwa>.md`. Data to dzień, w którym eksperyment **startuje**.
+- **Z góry zarejestruj kryteria sukcesu i porażki.** Oba muszą być zapisane przed startem eksperymentu. Definiowanie ich post hoc to droga, którą system zamienia się w samousprawiedliwienie.
+- **Ramy czasowe.** Każdy eksperyment ma datę przeglądu.
+- **Jedna hipoteza na eksperyment.** Jeśli są dwie, zrób dwa — albo wybierz.
+- Pole status w każdym pliku: `aktywny`, `zamknięty`, `wstrzymany`, `porzucony`.
+- Porzucony eksperyment też dostaje podsumowanie zamknięcia. *Dlaczego został porzucony* to prawdziwe dane.
 
-## Template summary
+## Streszczenie szablonu
 
-The full template lives in `.ai/commands/new-experiment.md`. Required sections:
+Pełny szablon żyje w `.ai/commands/new-experiment.md`. Wymagane sekcje:
 
-- Hypothesis
-- Why It Matters
-- Procedure
-- Success Criteria
-- Failure Criteria
-- Review Date
+- Hipoteza
+- Dlaczego to ważne
+- Procedura
+- Kryteria sukcesu
+- Kryteria porażki
+- Data przeglądu
 
-Close-out sections (appended via `close-experiment`):
+Sekcje zamknięcia (dopisywane przez `close-experiment`):
 
-- Result
-- What Worked
-- What Didn't
-- Lessons Learned
-- Psychological Map Updates (proposals only — actual map edits happen via `update-map`)
+- Wynik
+- Co zadziałało
+- Co nie zadziałało
+- Wnioski
+- Aktualizacje mapy psychologicznej (tylko propozycje — faktyczne edycje mapy idą przez `update-map`)
 
-## What this directory is NOT
+## Czego ten katalog NIE jest
 
-- Not a goal list. Goals are aspirations; experiments are tests with falsifiable outcomes.
-- Not a habit tracker. A habit attempt without a hypothesis and pre-registered criteria is not an experiment.
+- Nie jest listą celów. Cele są aspiracjami; eksperymenty są testami z falsyfikowalnymi wynikami.
+- Nie jest trackerem nawyków. Próba nawyku bez hipotezy i z góry zarejestrowanych kryteriów to nie eksperyment.

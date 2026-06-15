@@ -1,129 +1,135 @@
 # Mental Health
 
-A long-term personal psychological self-observation system. The goal is **pattern detection across months and years** to drive **behavioral change**, not therapy, not journaling for its own sake, and not symptom tracking.
+Długoterminowy system osobistej obserwacji psychologicznej. Celem jest **wykrywanie wzorców w skali miesięcy i lat** w służbie **zmiany zachowania** — nie terapia, nie pisanie dziennika dla samego pisania, nie śledzenie objawów.
 
-Focus areas: ADHD, anxiety, self-esteem, relationships, life satisfaction, behavioral experiments.
+Obszary: ADHD, lęk, samoocena, relacje, satysfakcja z życia, eksperymenty behawioralne.
 
-This repository is optimized for collaboration with AI assistants over time.
-
----
-
-## Single source of truth
-
-There is exactly one authoritative document about me in this repository:
-
-**`psychological-map.md`** (at the root).
-
-Everything else exists to support, update, or evidence the map. The map should be readable on its own without browsing the rest of the repo. If information starts to live anywhere else and never reaches the map, the system has failed.
-
-Target size of the map: **3–10 pages.** If it grows past that, prune or archive.
+Repozytorium jest zoptymalizowane do współpracy z asystentami AI w długim okresie.
 
 ---
 
-## Information flow
+## Pojedyncze źródło prawdy
+
+W tym repozytorium jest dokładnie jeden autorytatywny dokument o mnie:
+
+**`psychological-map.md`** (w katalogu głównym).
+
+Wszystko inne istnieje, żeby ten plik wspierać, aktualizować lub dostarczać mu dowodów. Mapa powinna być czytelna sama z siebie, bez przeglądania reszty repo. Jeśli informacje zaczynają żyć gdzie indziej i nigdy nie docierają do mapy — system zawiódł.
+
+Docelowy rozmiar mapy: **3–10 stron.** Jeśli urośnie ponad to — przytnij albo zarchiwizuj.
+
+---
+
+## Przepływ informacji
 
 ```
 journal/  ──┐
             ├──►  patterns/  ──►  psychological-map.md
 sessions/ ──┘                              ▲
                                            │
-experiments/  ─── results ─────────────────┘
+experiments/  ─── wyniki ──────────────────┘
 
-references/   (inputs from outside — never auto-merged into the map)
-archive/      (retired material — moved here, not deleted)
+references/   (wejście z zewnątrz — nigdy automatycznie nie wlewane do mapy)
+archive/      (materiał wycofany — przenoszony tu, nie usuwany)
 ```
 
-The rules:
+Reguły:
 
-1. **Raw observation → `journal/`.** Single events, vents, fragments. No promotion pressure.
-2. **Structured conversation → `sessions/`.** Summaries of substantive AI conversations. Temporary working documents.
-3. **Recurrence → `patterns/`.** When the same observation appears on ≥3 distinct days, it earns a place in the relevant `patterns/<domain>.md` file. Patterns are **analytical artifacts**, not sources of truth. They support the map; they do not replace it.
-4. **Strong evidence → `psychological-map.md`.** Only well-supported, durable findings reach the map. The map is updated via the `update-map` command after a deliberate review.
-5. **Hypotheses → `experiments/`.** When something in the map needs testing — or before promoting an interpretation — design a behavioral experiment.
-6. **External material → `references/`.** Articles, ADHD resources, therapy concepts, frameworks. **Never auto-merged into the map.**
-7. **Retired material → `archive/`.** When something in the map becomes outdated, the old version is moved here with a date; the new entry links back. Nothing is deleted.
-
----
-
-## The map's lifecycle
-
-`psychological-map.md` evolves slowly and deliberately.
-
-- **Add** an entry only when there are at least 3 distinct supporting observations across different days.
-- **Update** an entry only via the `update-map` command, which produces a diff proposal first.
-- **Supersede** rather than overwrite: move the old version to `archive/psychological-map-<date>.md`, write the replacement, link back.
-- **Demote** rather than delete: when a pattern weakens, mark `confidence: lowered, watch`. Removal happens only after extended absence.
-- **Cite evidence** for every non-trivial entry: link to `patterns/`, `sessions/`, or `experiments/`.
-- **Separate observation from interpretation.** Every entry has both, clearly distinguished, plus confidence.
+1. **Surowa obserwacja → `journal/`.** Pojedyncze zdarzenia, wyładowania, fragmenty. Bez presji promocji.
+2. **Ustrukturyzowana rozmowa → `sessions/`.** Podsumowania znaczących rozmów z AI. Tymczasowe dokumenty robocze.
+3. **Powtarzalność → `patterns/`.** Gdy ta sama obserwacja pojawi się w ≥3 różnych dniach, ląduje w odpowiednim pliku `patterns/<domena>.md`. Wzorce to **artefakty analityczne**, nie źródła prawdy. Wspierają mapę; nie zastępują jej.
+4. **Mocne dowody → `psychological-map.md`.** Tylko dobrze udokumentowane, trwałe ustalenia trafiają do mapy. Mapa aktualizowana jest przez komendę `update-map` po świadomym przeglądzie.
+5. **Hipotezy → `experiments/`.** Gdy coś w mapie wymaga sprawdzenia — albo zanim awansujesz interpretację — zaprojektuj eksperyment behawioralny.
+6. **Materiał zewnętrzny → `references/`.** Artykuły, materiały o ADHD, pojęcia z terapii, frameworki. **Nigdy automatycznie nie wlewane do mapy.**
+7. **Materiał wycofany → `archive/`.** Gdy coś w mapie się dezaktualizuje, stara wersja trafia tu z datą; nowy wpis linkuje wstecz. Nic nie jest usuwane.
 
 ---
 
-## The role of experiments
+## Cykl życia mapy
 
-The system prefers **experiments over speculation**.
+`psychological-map.md` ewoluuje wolno i świadomie.
 
-When the map contains an interpretation that has become load-bearing, or an open question that everyday life could test, design an experiment under `experiments/`. Experiments are time-boxed, pre-register success and failure criteria, and produce a written close-out — including the negative and abandoned ones.
-
-> "What can I test?" beats "Why am I like this?"
-
----
-
-## The role of AI agents
-
-AI assistants are **co-maintainers** of this repository, not interlocutors who soothe.
-
-### Rules for AI when processing new information
-
-1. **Capture observations in `journal/`** when they are raw and dated.
-2. **Detect recurring themes in `patterns/`** — promote only after recurrence.
-3. **Update `psychological-map.md` only when evidence is strong.** Never on the strength of one conversation.
-4. **Distinguish observations from interpretations** in every output. Mark hypotheses as hypotheses.
-5. **Avoid reassurance-seeking workflows.** No "you're doing great." No reassurance loops about specific anxiety content.
-6. **Prefer experiments over speculation.** When an interpretation gets sticky, propose an experiment instead of agreeing with it.
-
-### What AI should refuse
-
-- Diagnosing.
-- Generating reassurance without specific grounding.
-- Producing lists of "things you could try" when the user is venting (ask first whether they want options or witness).
-- Treating a single bad day as a trend.
-- Letting `references/` material flow into the map without explicit human approval.
-
-Full AI context lives in `.ai/context.md`. Reusable workflows live in `.ai/commands/`.
+- **Dodawaj** wpis tylko wtedy, gdy istnieją co najmniej 3 odrębne obserwacje wspierające go z różnych dni.
+- **Aktualizuj** wpis tylko przez komendę `update-map`, która najpierw produkuje propozycję zmian.
+- **Zastępuj** zamiast nadpisywać: przenieś starą wersję do `archive/psychological-map-<data>.md`, napisz zastępczą, podlinkuj wstecz.
+- **Degraduj** zamiast usuwać: gdy wzorzec słabnie, oznacz `pewność: obniżona, obserwuj`. Usunięcie następuje tylko po dłuższej nieobecności.
+- **Cytuj dowody** w każdym nietrywialnym wpisie: linkuj do `patterns/`, `sessions/` lub `experiments/`.
+- **Oddzielaj obserwację od interpretacji.** Każdy wpis ma jedno i drugie, wyraźnie rozdzielone, plus poziom pewności.
 
 ---
 
-## Directory map
+## Rola eksperymentów
+
+System preferuje **eksperymenty nad spekulacją**.
+
+Gdy w mapie znajduje się interpretacja, która stała się nośna, albo otwarte pytanie, które codzienne życie mogłoby przetestować — zaprojektuj eksperyment pod `experiments/`. Eksperymenty mają ramy czasowe, z góry określone kryteria sukcesu i porażki, oraz pisemne podsumowanie zamknięcia — w tym te negatywne i porzucone.
+
+> „Co mogę przetestować?" wygrywa z „Dlaczego taki jestem?"
+
+---
+
+## Rola asystentów AI
+
+Asystenci AI są **współpracownikami przy utrzymaniu** tego repozytorium, nie rozmówcami, którzy uspokajają.
+
+### Zasady dla AI przy przetwarzaniu nowych informacji
+
+1. **Zapisuj obserwacje w `journal/`**, gdy są surowe i datowane.
+2. **Wykrywaj powracające tematy w `patterns/`** — promuj dopiero po powtórzeniu.
+3. **Aktualizuj `psychological-map.md` tylko wtedy, gdy dowody są mocne.** Nigdy na podstawie jednej rozmowy.
+4. **Oddzielaj obserwacje od interpretacji** w każdym output. Oznaczaj hipotezy jako hipotezy.
+5. **Unikaj workflowów szukających uspokojenia.** Żadnego „świetnie ci idzie". Żadnych pętli uspokajających wokół konkretnej treści lękowej.
+6. **Preferuj eksperymenty nad spekulacją.** Gdy interpretacja staje się lepka, zaproponuj eksperyment zamiast się z nią zgadzać.
+
+### Czego AI ma odmawiać
+
+- Diagnozowania.
+- Generowania uspokojenia bez konkretnego oparcia.
+- Wytwarzania list „rzeczy, które mógłbyś spróbować", gdy użytkownik się wyżala (najpierw zapytaj, czy chce opcji, czy towarzyszenia).
+- Traktowania jednego złego dnia jako trendu.
+- Pozwalania, by materiał z `references/` przepłynął do mapy bez wyraźnej zgody człowieka.
+
+Pełny kontekst dla AI żyje w `.ai/context.md`. Wielokrotnego użytku workflow żyją w `.ai/commands/`.
+
+---
+
+## Mapa katalogów
 
 ```
 mental-health/
-├── README.md                      this file
-├── psychological-map.md           the single source of truth
-├── .ai/                           AI collaboration layer
-│   ├── context.md                   how an AI should approach this repo
-│   ├── decisions.md                 durable decisions about the system itself
-│   ├── session-log.md               chronological index of sessions
-│   └── commands/                    reusable AI workflows
-├── journal/                       raw, dated, append-only observations
-├── sessions/                      structured conversation summaries
-├── patterns/                      analytical artifacts (anxiety, adhd, …)
-├── experiments/                   behavioral experiments (active and closed)
-├── references/                    external material — never auto-merged
-└── archive/                       retired map entries and patterns
+├── README.md                      ten plik
+├── psychological-map.md           pojedyncze źródło prawdy
+├── .ai/                           warstwa współpracy z AI
+│   ├── context.md                   jak AI ma podejść do tego repo
+│   ├── decisions.md                 trwałe decyzje o samym systemie
+│   ├── session-log.md               chronologiczny indeks sesji
+│   └── commands/                    wielokrotnego użytku workflow AI
+├── journal/                       surowe, datowane obserwacje (tylko dopisuj)
+├── sessions/                      ustrukturyzowane podsumowania rozmów
+├── patterns/                      artefakty analityczne (anxiety, adhd, …)
+├── experiments/                   eksperymenty behawioralne (aktywne i zamknięte)
+├── references/                    materiał zewnętrzny — nigdy automatycznie nie wlewany
+└── archive/                       wycofane wpisy mapy i wzorców
 ```
 
 ---
 
-## Success metric
+## Język
 
-This repository exists to support:
+Domyślnym językiem tego repozytorium jest **polski**. Cała zawartość plików (mapa, wzorce, sesje, journal, eksperymenty, materiały) ma być po polsku. Nazwy plików i katalogów oraz komendy w `.ai/commands/` zostają po angielsku ze względów technicznych, ale **wyniki generowane przez komendy mają być po polsku**.
 
-- **a larger life**
-- **reduced avoidance**
-- **increased psychological flexibility**
-- **increased engagement with what matters**
-- **improved self-understanding**
+---
 
-The repository **does NOT exist solely to reduce anxiety.** Anxiety going down is not the goal. Anxiety can go down because life got smaller — that is a failure. Anxiety can go up while life gets larger — that can be success.
+## Metryka sukcesu
 
-If the map is becoming more honest, experiments are running, avoidance is being named, and engagement is increasing, the system is working.
+To repozytorium istnieje, żeby wspierać:
+
+- **większe życie**
+- **mniej unikania**
+- **większą elastyczność psychologiczną**
+- **większe zaangażowanie w to, co ważne**
+- **lepsze rozumienie siebie**
+
+Repozytorium **NIE istnieje wyłącznie po to, żeby zmniejszać lęk.** Spadek lęku nie jest celem. Lęk może spaść, bo życie się skurczyło — to porażka. Lęk może wzrosnąć, gdy życie się powiększa — to może być sukces.
+
+Jeśli mapa staje się uczciwsza, eksperymenty się dzieją, unikanie jest nazywane, a zaangażowanie rośnie — system działa.
