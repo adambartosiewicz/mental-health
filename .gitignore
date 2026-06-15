@@ -13,3 +13,7 @@
 *~
 *.swp
 *.swo
+
+# Obsidian — per-machine UI state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
