@@ -17,3 +17,10 @@
 # Obsidian — per-machine UI state
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
+.obsidian/graph.json
+
+# Obsidian — plugin runtime data (stateful, per-vault, regenerated)
+.obsidian/plugins/*/data.json
+
+# Obsidian — trash
+.trash/
