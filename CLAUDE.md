@@ -67,5 +67,5 @@ This repo supports: a larger life, reduced avoidance, increased psychological fl
 ## Repo / git notes
 
 - Plain Markdown; no tooling. Edits are the workflow.
-- Single branch `main`. The initial commit excluded `.ai/`; when changes touch `.ai/`, remind the user to stage that directory explicitly.
+- Single branch `main`.
 - `core/` was removed in the 2026-06-14 refactor — values, strengths, and open-questions are now sections of `psychological-map.md`. Do not reintroduce a `core/` split.
