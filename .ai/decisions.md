@@ -73,3 +73,9 @@ Trwałe decyzje o tym, **jak działa to repozytorium** — nie o użytkowniku. G
 **Decyzja:** Dodano komendę `.ai/commands/open-session.md`, która ładuje kontekst do prowadzenia rozmowy psychologicznej bez tworzenia pliku sesji. Plik sesji powstaje dopiero później przez `new-session`, jeśli rozmowa wytworzyła materiał wart zachowania.
 **Dlaczego:** `new-session` jest komendą zamykającą rozmowę, a brakowało symetrycznego kroku wejściowego. Bez niego AI może odpowiedzieć merytorycznie bez załadowania mapy, ostatnich sesji i właściwych wzorców.
 **Status:** aktywna
+
+## 2026-06-16 — Bearable trzyma dane strukturalne, journal opis jakościowy
+
+**Decyzja:** Dane ilościowe i strukturalne dotyczące stanu fizycznego i codziennych moderatorów (sen, jakość snu, energia, leki, kofeina, nawodnienie, tętno/ciśnienie, symptomy fizyczne, ogólny rating lęku) mogą być prowadzone w Bearable. `journal/` nie powinien wymagać przepisywania pełnej tabeli przy każdym wpisie. Journal służy do krótkiego opisu jakościowego epizodów, zwłaszcza gdy lęk osiąga ≥5/10, występuje panika, sprawdzanie/OCD, lęk wolnopłynący albo reakcja jest nietypowo silna względem bodźca.
+**Dlaczego:** Pełna tabela w każdym wpisie dziennika zwiększa tarcie i grozi porzuceniem trackingu. Bearable rozkłada wpisywanie w czasie i przypomina o nim powiadomieniami, a journal lepiej przechowuje kontekst, przebieg i znaczenie epizodu.
+**Status:** aktywna
