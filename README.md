@@ -104,7 +104,7 @@ mental-health/
 │   ├── decisions.md                 trwałe decyzje o samym systemie
 │   ├── session-log.md               chronologiczny indeks sesji
 │   └── commands/                    wielokrotnego użytku workflow AI
-├── journal/                       surowe, datowane obserwacje (tylko dopisuj)
+├── journal/                       surowe, datowane obserwacje (tylko dopisuj; podział YYYY/MM/YYYY-MM-DD.md)
 ├── sessions/                      ustrukturyzowane podsumowania rozmów
 ├── patterns/                      artefakty analityczne (anxiety, adhd, …)
 ├── experiments/                   eksperymenty behawioralne (aktywne i zamknięte)

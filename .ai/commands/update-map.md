@@ -27,7 +27,7 @@ The map is the **single source of truth** and the **slowest-moving file** in thi
 
 1. Read `psychological-map.md` in full.
 2. Read all `sessions/` files since the date noted at the top of the map (or the last 4 weeks if no date).
-3. Read recent `journal/` entries.
+3. Read recent `journal/` entries. The journal is partitioned as `journal/YYYY/MM/YYYY-MM-DD.md`; recurse into year/month subfolders rather than reading only the top level.
 4. Scan `patterns/` files for entries that have crossed the recurrence threshold but are not yet in the map.
 5. Produce a **diff proposal in Polish** before writing: list (a) wpisy do dodania, (b) wpisy do aktualizacji, (c) wpisy do degradacji/archiwizacji. Present this to the user for confirmation before applying.
 6. Apply approved changes. Update the "Ostatnia aktualizacja" date at the top of the map. Log the update in `.ai/session-log.md` with `→ mapa`.

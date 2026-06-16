@@ -10,7 +10,7 @@ This is the **detection** step. It does not write to `psychological-map.md` or t
 
 ## Procedure
 
-1. Read all of `sessions/` and `journal/`. Take note of recurring words, situations, body responses, triggers, time-of-day effects.
+1. Read all of `sessions/` and `journal/` (the latter is partitioned as `journal/YYYY/MM/YYYY-MM-DD.md` — descend recursively, not just the top level). Take note of recurring words, situations, body responses, triggers, time-of-day effects.
 2. Cluster recurrences into candidate patterns. A candidate needs **at least 3 instances on distinct days**.
 3. For each candidate, gather:
    - direct evidence (sessions/journal that show the pattern)
@@ -29,7 +29,7 @@ For every detected pattern, output:
 - **Opis:** <jedno-akapitowy opis prostym językiem>
 - **Dowody:**
   - `sessions/2026-05-18-...md` — <jednolinijkowa notatka>
-  - `journal/...` — <jednolinijkowa notatka>
+  - `journal/YYYY/MM/YYYY-MM-DD.md` — <jednolinijkowa notatka>
   - ...
 - **Kontrdowody:**
   - <sytuacje lub sesje, w których wzorzec byłby oczekiwany, ale się nie pojawił>

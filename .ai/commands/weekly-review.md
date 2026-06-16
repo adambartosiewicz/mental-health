@@ -9,7 +9,7 @@ Review the last 7 days. Pull signal out of noise. Set direction for the next wee
 ## Inputs
 
 - `sessions/` from the last 7 days
-- `journal/` entries from the last 7 days
+- `journal/` entries from the last 7 days (look under the current year/month subfolder: `journal/YYYY/MM/`; the 7-day window may straddle a month boundary)
 - Any `experiments/` updated, completed, or due in this window
 - Last week's review entry (if it exists), for continuity
 - `psychological-map.md` for context on currently active hypotheses and open questions

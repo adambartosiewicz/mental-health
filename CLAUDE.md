@@ -25,7 +25,7 @@ archive/      superseded map entries — moved here, never deleted
 
 Promotion is strict and one-directional. Do not shortcut it:
 
-- **journal/** — raw, dated, append-only single observations. No interpretation, no promotion pressure.
+- **journal/** — raw, dated, append-only single observations. No interpretation, no promotion pressure. Partitioned as `journal/YYYY/MM/YYYY-MM-DD.md` (full date stays in the filename, so citations remain self-describing). When listing journal entries, recurse into year/month subfolders.
 - **sessions/** — `YYYY-MM-DD-short-kebab-topic.md`. Structured conversation summaries; treat as temporary working documents. Most will not migrate.
 - **patterns/<domain>.md** — recurring observations (≥3 distinct days). Analytical artifacts, NOT sources of truth. Each entry: description, evidence, **counter-evidence**, confidence, possible experiments.
 - **psychological-map.md** — only well-supported, durable findings. Updates go through `.ai/commands/update-map.md`, which produces a diff proposal first.

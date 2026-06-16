@@ -52,7 +52,7 @@ Gdy w rozmowie pojawi się nowy materiał:
 
 ## Dyscyplina aktualizacji
 
-- **Dopisuj, nie nadpisuj** w `journal/` i `sessions/`.
+- **Dopisuj, nie nadpisuj** w `journal/` i `sessions/`. `journal/` jest podzielony na podkatalogi rok/miesiąc: nowy wpis trafia do `journal/YYYY/MM/YYYY-MM-DD.md` (np. dziś → `journal/2026/06/2026-06-16.md`).
 - **Zastępuj z archiwum** w `psychological-map.md`: gdy przekonanie się dezaktualizuje, przenieś starą wersję do `archive/psychological-map-<data>.md` z datą i napisz zastępczą z linkiem wstecz.
 - **Cytuj dowody**, dodając do mapy: odwołuj się do konkretnych plików sesji, wzorców lub eksperymentów.
 - **Próg powtarzalności:** coś wymaga co najmniej ~3 odrębnych obserwacji z różnych dni, zanim zarobi miejsce w `patterns/`. Mapa aktualizuje się jeszcze ostrożniej.
