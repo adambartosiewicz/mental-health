@@ -67,3 +67,9 @@ Trwałe decyzje o tym, **jak działa to repozytorium** — nie o użytkowniku. G
 **Decyzja:** Wpisy dziennika żyją pod `journal/RRRR/MM/RRRR-MM-DD.md`. Pełna data zostaje w nazwie pliku — żeby cytaty (`journal/2017/07/2017-07-22.md`) były czytelne także w izolacji od ścieżki. `journal/README.md` zostaje na poziomie głównym katalogu jako konwencja. Komendy (`analyze-pattern`, `update-map`, `weekly-review`) operujące na journal mają schodzić rekurencyjnie po podkatalogach.
 **Dlaczego:** Po imporcie z lifelogu w czerwcu 2026 katalog `journal/` urósł do 269 plików w jednym poziomie, co utrudnia nawigację w edytorze i robi ścianę przy listowaniu. Podział po rok/miesiąc daje fizyczne klastry zgodne z naturalnymi oknami analitycznymi (rok jako kontekst życiowy, miesiąc jako jednostka przeglądu).
 **Status:** aktywna
+
+## 2026-06-16 — Sesję najpierw się otwiera, potem ewentualnie zapisuje
+
+**Decyzja:** Dodano komendę `.ai/commands/open-session.md`, która ładuje kontekst do prowadzenia rozmowy psychologicznej bez tworzenia pliku sesji. Plik sesji powstaje dopiero później przez `new-session`, jeśli rozmowa wytworzyła materiał wart zachowania.
+**Dlaczego:** `new-session` jest komendą zamykającą rozmowę, a brakowało symetrycznego kroku wejściowego. Bez niego AI może odpowiedzieć merytorycznie bez załadowania mapy, ostatnich sesji i właściwych wzorców.
+**Status:** aktywna

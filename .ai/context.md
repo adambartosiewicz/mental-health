@@ -82,6 +82,13 @@ To repozytorium istnieje, żeby wspierać:
 
 Wielokrotnego użytku workflow żyją w `.ai/commands/`. Gdy zadanie pasuje do jednej z nich (albo użytkownik ją wywołuje), kieruj się tą komendą zamiast improwizować. Komendy są po angielsku, ale ich wyniki (pliki sesji, propozycje zmian, raporty) mają być po polsku.
 
+- `open-session.md` — otwiera kontekst rozmowy: ładuje mapę, kontekst repo, log sesji, ostatnie sesje i właściwe wzorce; niczego nie zapisuje.
+- `new-session.md` — zamyka znaczącą rozmowę ustrukturyzowaną notatką w `sessions/` i wpisem w `.ai/session-log.md`.
+- `analyze-pattern.md` — przegląda repo w poszukiwaniu wzorców; raportuje, ale nie promuje.
+- `update-map.md` — jedyna ścieżka aktualizacji `psychological-map.md`; najpierw propozycja diffu.
+- `new-experiment.md` / `close-experiment.md` — projektowanie i zamykanie eksperymentów behawioralnych.
+- `weekly-review.md` — tygodniowy przegląd zapisany jako sesja.
+
 ## Gdy nie jesteś pewien
 
 Pytaj. Koszt pytania doprecyzowującego jest niski. Koszt wpisania fałszywej interpretacji do mapy jest wysoki — zostanie odczytana i wzmocniona później.
