@@ -61,3 +61,9 @@ Trwałe decyzje o tym, **jak działa to repozytorium** — nie o użytkowniku. G
 **Decyzja:** Domyślnym językiem zawartości plików (mapa, wzorce, sesje, journal, eksperymenty, materiały, README, decyzje) jest polski. Komendy w `.ai/commands/` zostają w angielskim, ale ich wyniki — pliki sesji, eksperymenty, propozycje aktualizacji mapy, raporty cotygodniowe — generowane są po polsku. Nazwy plików i katalogów (np. `psychological-map.md`, `patterns/`, `journal/`) zostają w angielskim ze względów technicznych.
 **Dlaczego:** Użytkownik myśli i czuje po polsku. Self-modeling po angielsku tworzy warstwę tłumaczenia, która gubi niuanse. Komendy zostają po angielsku, bo to instrukcje techniczne dla AI, nie treść dla użytkownika.
 **Status:** aktywna
+
+## 2026-06-16 — `journal/` partycjonowany na rok/miesiąc
+
+**Decyzja:** Wpisy dziennika żyją pod `journal/RRRR/MM/RRRR-MM-DD.md`. Pełna data zostaje w nazwie pliku — żeby cytaty (`journal/2017/07/2017-07-22.md`) były czytelne także w izolacji od ścieżki. `journal/README.md` zostaje na poziomie głównym katalogu jako konwencja. Komendy (`analyze-pattern`, `update-map`, `weekly-review`) operujące na journal mają schodzić rekurencyjnie po podkatalogach.
+**Dlaczego:** Po imporcie z lifelogu w czerwcu 2026 katalog `journal/` urósł do 269 plików w jednym poziomie, co utrudnia nawigację w edytorze i robi ścianę przy listowaniu. Podział po rok/miesiąc daje fizyczne klastry zgodne z naturalnymi oknami analitycznymi (rok jako kontekst życiowy, miesiąc jako jednostka przeglądu).
+**Status:** aktywna
