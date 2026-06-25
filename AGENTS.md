@@ -38,7 +38,7 @@ Promotion is strict and one-directional. Do not shortcut it:
 Reusable workflows live in `.ai/commands/`. When a task matches one, **follow that command rather than improvising**:
 
 - `open-session.md` — load map, context, recent sessions, and relevant patterns before a substantive psychological conversation
-- `new-session.md` — write a session note at end of a substantive conversation
+- `log-session.md` — write a session note at end of a substantive conversation
 - `analyze-pattern.md` — detection sweep across the repo; outputs only, never writes to map/patterns
 - `update-map.md` — the **only** path that mutates `psychological-map.md`; always diff-propose first
 - `new-experiment.md` / `close-experiment.md` — design and close-out behavioral experiments

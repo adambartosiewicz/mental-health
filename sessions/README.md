@@ -10,7 +10,7 @@ Sesje są **podstawową bazą dowodów** dla wszystkiego w `patterns/` i `psycho
 
 ## Reguły aktualizacji
 
-- Pliki sesji twórz komendą `new-session` — pełny szablon w `.ai/commands/new-session.md`.
+- Pliki sesji twórz komendą `log-session` — pełny szablon w `.ai/commands/log-session.md`.
 - Nazwa pliku: `RRRR-MM-DD-<krótki-kebab-temat>.md`. Powtórki tego samego dnia dostają `-2`, `-3` itd.
 - **Oddzielaj obserwację od interpretacji** w pliku. To najważniejsza reguła tego szablonu.
 - Dodaj jednolinijkowy wpis do `.ai/session-log.md` dla każdej nowej sesji.
@@ -18,7 +18,7 @@ Sesje są **podstawową bazą dowodów** dla wszystkiego w `patterns/` i `psycho
 
 ## Streszczenie szablonu
 
-Pełny szablon żyje w `.ai/commands/new-session.md`. Wymagane sekcje:
+Pełny szablon żyje w `.ai/commands/log-session.md`. Wymagane sekcje:
 
 - Kontekst
 - Obserwacje

@@ -11,7 +11,7 @@ Open a working psychological session by loading the minimum context needed to co
 - continuity from recent sessions,
 - relevant domain patterns when the topic is known.
 
-This is the **intake / context-loading** step. It prepares the conversation. If the conversation later produces material worth preserving, close it with `new-session`.
+This is the **intake / context-loading** step. It prepares the conversation. If the conversation later produces material worth preserving, close it with `log-session`.
 
 ## When to invoke
 
@@ -54,7 +54,7 @@ Od czego zaczynamy: <jedno konkretne pytanie>
 
 ## Rules
 
-- **Do not create a session file at opening.** Session files are created at the end by `new-session`, when there is something substantive to preserve.
+- **Do not create a session file at opening.** Session files are created at the end by `log-session`, when there is something substantive to preserve.
 - **Separate observation from interpretation** in the opening context.
 - **Cite sources** when naming an active hypothesis about the user.
 - **No reassurance language.** Do not open with soothing, praise, or "to normalne".

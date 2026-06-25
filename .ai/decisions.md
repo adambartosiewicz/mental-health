@@ -70,8 +70,8 @@ Trwałe decyzje o tym, **jak działa to repozytorium** — nie o użytkowniku. G
 
 ## 2026-06-16 — Sesję najpierw się otwiera, potem ewentualnie zapisuje
 
-**Decyzja:** Dodano komendę `.ai/commands/open-session.md`, która ładuje kontekst do prowadzenia rozmowy psychologicznej bez tworzenia pliku sesji. Plik sesji powstaje dopiero później przez `new-session`, jeśli rozmowa wytworzyła materiał wart zachowania.
-**Dlaczego:** `new-session` jest komendą zamykającą rozmowę, a brakowało symetrycznego kroku wejściowego. Bez niego AI może odpowiedzieć merytorycznie bez załadowania mapy, ostatnich sesji i właściwych wzorców.
+**Decyzja:** Dodano komendę `.ai/commands/open-session.md`, która ładuje kontekst do prowadzenia rozmowy psychologicznej bez tworzenia pliku sesji. Plik sesji powstaje dopiero później przez `log-session`, jeśli rozmowa wytworzyła materiał wart zachowania.
+**Dlaczego:** `log-session` jest komendą zamykającą rozmowę, a brakowało symetrycznego kroku wejściowego. Bez niego AI może odpowiedzieć merytorycznie bez załadowania mapy, ostatnich sesji i właściwych wzorców.
 **Status:** aktywna
 
 ## 2026-06-16 — Bearable trzyma dane strukturalne, journal opis jakościowy
