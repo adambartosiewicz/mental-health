@@ -79,3 +79,13 @@ Trwałe decyzje o tym, **jak działa to repozytorium** — nie o użytkowniku. G
 **Decyzja:** Dane ilościowe i strukturalne dotyczące stanu fizycznego i codziennych moderatorów (sen, jakość snu, energia, leki, kofeina, nawodnienie, tętno/ciśnienie, symptomy fizyczne, ogólny rating lęku) mogą być prowadzone w Bearable. `journal/` nie powinien wymagać przepisywania pełnej tabeli przy każdym wpisie. Journal służy do krótkiego opisu jakościowego epizodów, zwłaszcza gdy lęk osiąga ≥5/10, występuje panika, sprawdzanie/OCD, lęk wolnopłynący albo reakcja jest nietypowo silna względem bodźca.
 **Dlaczego:** Pełna tabela w każdym wpisie dziennika zwiększa tarcie i grozi porzuceniem trackingu. Bearable rozkłada wpisywanie w czasie i przypomina o nim powiadomieniami, a journal lepiej przechowuje kontekst, przebieg i znaczenie epizodu.
 **Status:** aktywna
+
+## 2026-06-27 — `journal/` jako bieżący dziennik życia, ze znacznikami tematów
+
+**Decyzja:** Od teraz użytkownik pisze wpisy dziennika bezpośrednio w `journal/` (dotychczasowe wpisy pochodzą z importu z Diaro). Wpisy są pełne i pisane „dla siebie" — mogą obejmować zwykłe dni bez treści psychologicznej. Żeby zachować możliwość filtrowania sygnału, każdy wpis dostaje znaczniki w **YAML frontmatter** jako właściwość `tags` (kompatybilne z Obsidianem i łatwe do parsowania), np. `tags: [lęk, relacje]`; zwykły dzień bez treści psychologicznej → `tags: []`. Paleta tagów oparta na domenach mapy: `lęk, zobojętnienie, relacje, małżeństwo, ADHD, praca, ruch, sen, ludzie` (otwarta — nowy powracający tag jest sygnałem, że domena dojrzewa do `patterns/`). Dzień z epizodem lękowym zachowuje istniejącą konwencję: nagłówek `## HH:MM — epizod lęku` + blok „Minimum do zapisu" (patrz decyzja 2026-06-16 o Bearable). Komendy operujące na journal (`analyze-pattern`, `update-map`, `weekly-review`) mają przy liczeniu częstotliwości filtrować po `tags`, nie po liczbie plików.
+
+**Dlaczego:** Jedno miejsce o niskim tarciu zwiększa szansę na regularność. Dyscyplina promocji (`journal/` → `patterns/` ≥3 dni → mapa) chroni mapę przed szumem niezależnie od liczby wpisów. Znaczniki rozwiązują jedyne realne ryzyko: rozcieńczenie sygnału psychologicznego w pełnym strumieniu życia oraz utrzymanie sensowności heurystyk częstotliwości.
+
+**Uwaga (konfund do rozliczenia w mapie):** Korpus z Diaro był pisany nieregularnie i często jako „wentyl bezpieczeństwa w kryzysie", więc częstotliwość wpisów jest skonfundowana wzorcem pisania, nie tylko stanem. To podważa pewność dwóch wpisów mapy opartych na liczeniu wpisów: „Satysfakcja z życia / Rok 2019" (kontrast 1 vs 19 vs 22 epizody) oraz otwarte pytanie „Co się stało 2022–2023?". Do obniżenia pewności przez `update-map` w osobnym kroku.
+
+**Status:** aktywna
