@@ -1,3 +1,7 @@
+---
+tags: [ lęk, zobojętnienie, relacje, małżeństwo, ADHD, praca, ruch, sen, ludzie ]
+---
+
 ## {{time}} — epizod lęku
 
 > Dane strukturalne (sen, leki, kofeina, nawodnienie, energia, tętno/ciśnienie, symptomy fizyczne) wpisuję w Bearable. Ten wpis służy tylko do jakościowego opisu epizodu.
@@ -18,5 +22,5 @@
 - **Co pomogło zejść niżej:**
 - **Czas do zejścia poniżej 3/10:**
 
-### Notatka surowa
+## Notatka surowa
 
